@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "Github Quiet Comment",
+  "description": "This extension allows a Github user to quiet all the comments on a Pull Request",
+  "version": "1.0",
+  "author": "QB, Inc",
+  "content_scripts": [{
+    "matches": ["https://github.com/*/pull/*/files"],
+    "js": ["script.js"]
+  }],
+  "background": {
+    "scripts": ["event.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "tabs", "webNavigation", "https://github.com/*"
+  ]
+}
