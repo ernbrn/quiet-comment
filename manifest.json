@@ -7,7 +7,7 @@
   "author": "QB, Inc",
   "content_scripts": [{
     "matches": ["https://github.com/*/pull/*/files"],
-    "js": ["script.js"]
+    "js": ["jquery-3.2.1.min.js","script.js"]
   }],
   "background": {
     "scripts": ["event.js"],
