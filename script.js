@@ -16,9 +16,11 @@ if (!$('#quiet-comment-button-container').length) {
 
   $button.click(function() {
     var elements = document.getElementsByClassName('js-toggle-file-notes');
-    [].forEach.call(elements, (el) => el.click());
+    [].forEach.call(elements, function(el) {
+      el.checked = !$button.hasClass(classToggleName);
+      el.click();
+    });
     $button.toggleClass(classToggleName);
     setButtonText();
   });
 }
-
