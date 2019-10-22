@@ -7,3 +7,13 @@ Enter Quiet Comment! This Chrome Extension will allow you to hide all existing c
 1. Quiet the comments
 2. Review the PR
 3. Profit!
+
+
+
+
+
+
+
+
+
+
