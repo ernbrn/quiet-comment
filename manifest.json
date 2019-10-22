@@ -5,6 +5,7 @@
   "description": "This extension allows a Github user to quiet all the comments on a Pull Request",
   "version": "1.0",
   "author": "QB, Inc",
+
   "content_scripts": [{
     "matches": ["https://github.com/*/pull/*/files"],
     "js": ["jquery-3.2.1.min.js","script.js"]

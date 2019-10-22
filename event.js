@@ -4,3 +4,4 @@ chrome.webNavigation.onHistoryStateUpdated.addListener(function(details) {
   });
 }, {url: [{hostContains: 'github.', urlContains: 'pull', urlSuffix: 'files'}]});
 
+

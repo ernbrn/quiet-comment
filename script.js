@@ -7,6 +7,7 @@ if (!$('#quiet-comment-button-container').length) {
   var setButtonText = function() {
     var buttonText = $button.hasClass(classToggleName) ? 'Show Comments' : 'Quiet Comments';
     $button.text(buttonText)
+
   };
 
   setButtonText();
