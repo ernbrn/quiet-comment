@@ -15,11 +15,12 @@ if (!$('#quiet-comment-button-container').length) {
   $buttonContainer.prependTo($prReveiewTools);
 
   $button.click(function() {
-    var elements = document.getElementsByClassName('js-toggle-file-notes');
-    [].forEach.call(elements, function(el) {
-      el.checked = !$button.hasClass(classToggleName);
-      el.click();
-    });
+    var elements = document.getElementsByClassName('js-inline-comments-container');
+    if ($button.hasClass(classToggleName)) {
+      elements.css('display', 'none');
+    } else {
+      elements.css('display', '');
+    };
     $button.toggleClass(classToggleName);
     setButtonText();
   });
