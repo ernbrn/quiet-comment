@@ -1,6 +1,6 @@
 if (!$('#quiet-comment-button-container').length) {
   var classToggleName = 'comments-quiet';
-  var $prReveiewTools = $('.pr-review-tools');
+  var $prReviewTools = $('.pr-review-tools');
 
   var $buttonContainer = $('<div class="diffbar-item" id="quiet-comment-button-container"></div>');
   var $button = $('<button type="button" class="btn btn-sm btn-success js-menu-target" aria-expanded="false" aria-haspopup="true"></button>');
@@ -12,14 +12,14 @@ if (!$('#quiet-comment-button-container').length) {
   setButtonText();
 
   $button.appendTo($buttonContainer);
-  $buttonContainer.prependTo($prReveiewTools);
+  $buttonContainer.prependTo($prReviewTools);
 
   $button.click(function() {
-    var elements = document.getElementsByClassName('js-inline-comments-container');
+    var elements = $('.js-inline-comments-container');
     if ($button.hasClass(classToggleName)) {
-      elements.css('display', 'none');
-    } else {
       elements.css('display', '');
+    } else {
+      elements.css('display', 'none');
     };
     $button.toggleClass(classToggleName);
     setButtonText();
